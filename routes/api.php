@@ -41,3 +41,7 @@ Route::middleware('auth:api')
         Route::delete('/products/{product}', 'ProductController@destroy')->name('products.destroy');
         */
     });
+
+Route::get('cors_example', function () {
+    return ['status'=>'ok'];
+});
